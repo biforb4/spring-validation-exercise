@@ -2,6 +2,7 @@ package pl.infoshare.validation.raise.model;
 
 import lombok.Value;
 
+import javax.validation.constraints.Pattern;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -11,6 +12,7 @@ public class AcceptedRaise {
     private static final String ID_FORMAT = "%s-%s";
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd.MMM.yyyy");
 
+    @Pattern(regexp = "\\d+\\.\\w+\\.\\d+-\\d+")
     String id;
     LocalDate date;
     BigDecimal acceptedSalary;

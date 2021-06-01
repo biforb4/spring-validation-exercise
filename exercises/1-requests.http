@@ -30,7 +30,7 @@ Content-Type: application/json
 
 {
   "currentSalary": 3000,
-  "proposedRaiseDate": "2021-04-31",
+  "proposedRaiseDate": "2021-04-30",
   "proposedSalary": 3299.99,
   "previousRaises": [
     { "id": "30.DEC.2020-3000", "date": "2020-12-30", "acceptedSalary": 3000 }
